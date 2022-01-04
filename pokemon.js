@@ -1,4 +1,4 @@
-fetch('https://pokeapi.co/api/v2/pokemon/130').then(res =>{
+fetch('https://pokeapi.co/api/v2/pokemon/7').then(res =>{
     return res.json();
 }).then(data => {
     console.log(data);
@@ -10,9 +10,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/130').then(res =>{
         <img src="${ data.sprites.front_shiny }">
         <img src="${ data.sprites.back_shiny }">
         </div>
+        <h3>Ability<h3>
         <ul>
             <li>${ data.abilities[0].ability.name }</li>
-            <li>${ data.abilities[1].ability.name }</li>
          
         </ul>
         <h3>MOVES</h3>
@@ -22,6 +22,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/130').then(res =>{
         <li>${ data.moves[7].move.name }</li>
         <li>${ data.moves[8].move.name }</li>
         </ul>
+        <br>
+        <h3>Details</h3>
+
     `
 
 }).catch(err => {
