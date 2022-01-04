@@ -2,7 +2,8 @@ fetch('https://pokeapi.co/api/v2/pokemon/7').then(res =>{
     return res.json();
 }).then(data => {
     console.log(data);
-    document.querySelector("#load").innerHTML= `
+    document.querySelector("#card").innerHTML= `
+   
         <h1>${ data.name }</h1>
         <div>
         <img src="${ data.sprites.front_default }">
@@ -11,10 +12,10 @@ fetch('https://pokeapi.co/api/v2/pokemon/7').then(res =>{
         <img src="${ data.sprites.back_shiny }">
         </div>
         <h3>Ability<h3>
-        <ul>
-            <li>${ data.abilities[0].ability.name }</li>
+        
+            <p>${ data.abilities[0].ability.name }</p>
          
-        </ul>
+        
         <h3>MOVES</h3>
         <ul>
         <li>${ data.moves[5].move.name }</li>

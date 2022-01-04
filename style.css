@@ -19,3 +19,7 @@ h1{
 #kimmy{
     color: red;
 }
+#card{
+    text-align: center;
+    border: 10px groove blueviolet;
+}
