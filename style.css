@@ -1,7 +1,21 @@
 #load{
-    border: 5px solid gold;
+    border: 5px solid black;
     text-align: center;
+    background-color: peachpuff;
 }
 h1{
     text-align: center;
+}
+.pics{
+    height: 100px !important;
+}
+.namee{
+    color: red;
+}
+
+.price{
+    color: green;
+}
+#kimmy{
+    color: red;
 }
